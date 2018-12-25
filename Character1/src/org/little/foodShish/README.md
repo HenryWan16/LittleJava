@@ -1,10 +1,12 @@
-# Skewers
+# Skewers (Kebab model)
 + When writing a function over a datatype, 
 place a method in each of the variants 
 that make up the datatype. 
 If a field of a variant belongs to the same datatype, 
 the method may call the corresponding method of the field 
 in computing the function.
+
++ You can change food or holder in this kebab.
 + For example: In class Onion: _s.onlyOnions()
 
 + For example: 
@@ -30,7 +32,7 @@ public class Shish {
     }
     
     public boolean onlyOnion() {
-        return False;
+        return false;
     }
     
     public boolean isVegetable() {
@@ -38,3 +40,9 @@ public class Shish {
     }
 }
 ```
+
+## Weak point in new solution
++ We defined 4 classes and each contain 2 methods.
+
++ For everything we want to do with Shish, we must add a
+method definition in each class.
